@@ -1,4 +1,4 @@
-module github.com/rquedas/otel4devs/collector/receiver/trace-receiver/tailtracer
+module github.com/FirstOrangutan/otel4devs/collector/receiver/trace-receiver/tailtracer
 
 go 1.17
 
