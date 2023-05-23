@@ -2,6 +2,8 @@ package tailtracer
 
 import (
 	"context"
+	"time"
+
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/receiver"
@@ -9,7 +11,7 @@ import (
 
 const (
 	typeStr         = "tailtracer"
-	defaultInterval = "1m"
+	defaultInterval = 1 * time.Minute
 )
 
 func createDefaultConfig() component.Config {
